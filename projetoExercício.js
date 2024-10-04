@@ -4,10 +4,10 @@ function adicionarAluno() {
     let nomeAluno = document.getElementById('nomeAluno').value;
 
     //Verifica se o campo não está vazio 
-    if (nomeAluno !== " ") {
+    if (nomeAluno !== "") {
         listaDeAlunos.push(nomeAluno); //adiciona o aluno na lista
         atualizarListaAlunos(); //atualiza a lista de alunos
-        document.getElementById('nomeAluno'); value = "";   //limpa a caixa de texto
+        document.getElementById('nomeAluno').value = "";   //limpa a caixa de texto
     } else{
         alert ('Por favor digite o nome do aluno');
     }
